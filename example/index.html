@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SozialData" />
+  <meta name="author" content="Stefan Hintz" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <!--<![endif]&ndash;&gt;-->
+  <!-- stuff to make the page pretty -->
+  <link rel="stylesheet" href="style.css" />
+  <title>SozialData</title>
+</head>
+
+<body ng-app="app" class="ng-cloak">
+  <div id="resultsContainer">
+    <div id="searchBar">
+      <form role="form" class="form-inline">
+        <input type="hidden" name="index" value="firebase" />
+        <div id="bloodhound" class="input-group">
+          <input type="text" class="form-control typeahead" name="term" placeholder="Nach Hilfe suchen">
+          <button class="btn btn-default" type="submit"><i class="material-icons ">search</i></button>
+        </div>
+      </form>
+    </div>
+    <div id="results">
+    <ol>
+    </ol>
+    </div>
+  </div>
+  <div id="mapContainer">
+    <div id='map'></div>
+  </div>
+  <!--
+<div class="container">
+    <h1>Flashlight: Search library built on Firebase and ElasticSearch</h1>
+    
+    <div class="row">
+        <div class="col-md-6">
+           <form role="form" class="form-inline">
+               
+               <input type="hidden" name="index" value="firebase" />
+               <div id="bloodhound" class="input-group">
+                   <input type="text" class="form-control typeahead" name="term" placeholder="Enter search term" >
+                   <span class="input-group-btn">
+                       <button class="btn btn-default" type="submit">Search!</button>
+                   </span>
+               </div>
+               <ul class="list-inline">
+                   <li><label><input type="radio" name="type" value="user" checked> users</label></li>
+                   <li><label><input type="radio" name="type" value="message"> messages</label></li>
+                   <li class="divider"></li>
+                   <li><label><input type="checkbox" name="words"> whole words</label></li>
+               </ul>
+               <p class="help-block">You may use * or ? for wild cards in your search.</p>
+           </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+           <h2>Results <span id="total" class="zero">0</span></h2>
+           <pre id="results" class="pre-scrollable zero">(enter a search term)</pre>
+        </div>
+        <div class="col-md-6">
+           <h2>Raw data</h2>
+            <pre id="raw" class="pre-scrollable"></pre>
+        </div>
+    </div>
+    <div class="footer">
+        <p><a href="http://firebase.mit-license.org/">MIT License</a> | <a href="http://www.firebase.com">Firebase</a></p>
+    </div>
+</div>
+-->
+  <!-- libs and dependencies -->
+  <script src='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.24.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <!-- the app -->
+  <script type="text/javascript" src="example.js"></script>
+  <script type="text/javascript" src="typeahead.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

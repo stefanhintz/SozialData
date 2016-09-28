@@ -1,0 +1,281 @@
+h2 span {
+  padding: 0 5px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+}
+
+h2 span.zero,
+.zero {
+  color: #999;
+}
+
+h2 span.error,
+.error {
+  color: red;
+}
+
+#fork_on_github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.list-inline label {
+  display: inline-block;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.list-inline li.divider {
+  padding: 3px 20px;
+}
+
+.list-inline label:hover {
+  background-color: #fafafa;
+}
+
+@media (max-width: 767px) {
+  #fork_on_github {
+    display: none
+  }
+}
+
+#map {
+  flex: 1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+#results {
+  overflow-y: scroll;
+}
+
+#resultsContainer,
+#mapContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#resultsContainer {
+  border-right: 1px solid rgb(200, 200, 200);
+}
+
+.tt-menu {
+  background: white;
+}
+
+#bloodhound {
+  height: 60px;
+  display: flex;
+  flex: 1;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.twitter-typeahead {
+  flex: 1;
+}
+
+#bloodhound .form-control.typeahead {
+  padding-top: 10px;
+  box-shadow: none;
+  font-size: 18px;
+  border: 0;
+  padding-left: 60px;
+  height: 100%;
+  padding-right: 60px;
+}
+
+.tt-suggestion.tt-selectable {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.tt-menu {
+  color: rgb(120, 120, 120);
+  width: 100%;
+  margin-top: 1px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  box-shadow: none;
+  font-size: 18px;
+  border: 0;
+  padding-left: 60px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  background: rgb(240, 240, 240);
+}
+
+#searchBar {
+  flex: 60px 0 0;
+  display: flex;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+#searchBar form {
+  display: flex;
+  flex: 1
+}
+
+.tt-selectable:hover,
+.tt-cursor {
+  color: rgb(0, 0, 0);
+}
+
+#bloodhound button {
+  right: 0;
+  top: 6px;
+  position: absolute;
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+  color: rgb(50, 200, 100);
+  ;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+#bloodhound button i {
+  padding-top: 4px;
+  font-size: 28px;
+}
+
+h1 {
+  flex: 1;
+  font-size: 20px;
+  padding: 30px;
+  margin: 0;
+}
+
+.label-row {
+  display: flex;
+}
+
+.website,
+.phone,
+.mail,
+.address {
+  margin-bottom: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 12px;
+  color: #808080;
+}
+
+p a {
+  color: #808080;
+}
+
+p a:hover {
+  color: #808080;
+}
+
+li .title {
+  width: 80px;
+  color: #ababab;
+}
+
+li {
+  border-bottom: 1px solid rgb(230, 230, 230);
+  padding: 10px 0 10px 0;
+  counter-increment: step-counter;
+  position: relative;
+}
+
+li:hover:before {
+  background-color: rgb(50, 200, 100);
+  color: white;
+}
+
+li::before {
+  transition: 150ms all ease;
+  left: -36px;
+  top: 28px;
+  position: absolute;
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: rgb(230, 230, 230);
+  color: #ababab;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+ol {
+  margin: 0 40px 0 20px;
+  padding-right: 0;
+  list-style-type: none;
+}
+
+h2 a {
+  color: rgb(50, 200, 100);
+}
+
+h2 a:hover {
+  color: rgb(50, 200, 100);
+}
+
+h2 a:active {
+  color: rgb(50, 200, 100);
+}
+
+.description {
+  font-size: 12px;
+}
+
+.shortDiscription {
+  font-size: 12px;
+  color: #ababab;
+  margin-bottom: 8px;
+}
+
+.mapboxgl-marker {
+   transition: all 150ms ease;
+   transform-origin: center center;
+   border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(50, 200, 100);
+  border: 1px solid white;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+.detailsContainer {
+display: flex;
+}
+
+.details {
+  flex: 1;
+}
+
+.source {
+  display: flex;
+  align-items: flex-end;
+}
+
+.source p {
+  margin: 0;
+}
+
+.source a {
+  text-transform: uppercase;
+  text-transform: uppercase;
+    font-size: 10px;
+    color: rgb(200,200,200);
+}
