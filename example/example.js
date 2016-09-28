@@ -76,7 +76,7 @@
     var ref = database.ref().child(PATH);
     var key = ref.child('request').push({ index: index, type: type, query: query }).key;
 
-    console.log('search', key, { index: index, type: type, query: query });
+    
     ref.child('response/' + key).on('value', showResults);
   }
 
@@ -113,7 +113,7 @@
       if (!term.match(/^\*/)) { term = '*' + term; }
       if (!term.match(/\*$/)) { term += '*'; }
     }
-    console.log(term.replace(/[^a-zA-Z0-9 ]/g, ''));
+    
     return term.replace(/[^a-zA-Z0-9 ]/g, '');
   }
 
@@ -127,7 +127,7 @@
 
         $("#" + markerID).hover(function() {
           var marker = document.querySelector(".mapboxgl-marker.institution-" + markerID);
-          console.log(marker);
+          
           marker.style.width = "30px";
           marker.style.height = "30px";
           marker.style.margin = "-5px 0 0 -5px";
